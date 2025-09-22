@@ -1,5 +1,5 @@
 :root.theme-dark {
-  --cover-image: url(/images/cover-image-dark.png);
+  --cover-image: url(../images/cover-image-dark.png);
   --main-title-color: #db00ff;
   --text-shadow-color: #ff0070;
   --text-shadow: 4px 4px 0 var(--text-shadow-color);

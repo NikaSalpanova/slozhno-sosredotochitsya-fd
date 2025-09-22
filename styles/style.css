@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace, sans-serif;
   background-image: var(--cover-image);
   background-color: var(--background-color);
   background-attachment: fixed;
@@ -14,7 +14,7 @@
   min-block-size: 668px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 173px minmax(250px, 1fr) 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   padding: var(--padding-header);
 }
 
@@ -22,8 +22,9 @@
   position: absolute;
   display: flex;
   justify-self: flex-end;
-  padding-inline-end: 40px;
-  padding-block-start: 11px;
+  font-size: var(--main-font-size);
+  padding-inline-end: 38px;
+  padding-block-start: 10px;
   font-weight: var(--font-normal);
   color: var(--decorated-zone-color);
   line-height: 139%;
@@ -31,7 +32,7 @@
 }
 
 .header__decor::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 20px;
   top: 19px;
@@ -47,7 +48,7 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   right: var(--padding-header);
   top: var(--padding-header);
@@ -58,7 +59,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   left: var(--padding-header);
   bottom: var(--padding-header);
@@ -72,7 +73,7 @@
   grid-column: 4;
   grid-row: 1;
   justify-self: end;
-  align-content: end;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -80,7 +81,6 @@
   flex-direction: column;
   gap: 12px;
   align-items: flex-end;
-  padding-block-end: 12px;
 }
 
 .header__theme-menu-item {
@@ -112,6 +112,7 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--decorated-zone-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -142,16 +143,12 @@
   background-color: var(--accent-background-color);
 }
 
-.content {
-  background-color: var(--background-color);
-  padding-inline-start: var(--padding-content);
-  padding-inline-end: var(--padding-content);
-}
-
 .section {
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace, sans-serif;
   font-size: var(--main-font-size);
+  background-color: var(--background-color);
   padding-block-end: var(--padding-block-end);
+  padding-inline: var(--padding-inline);
   display: grid;
   grid-template-columns: 236px 1fr 1fr;
   grid-template-rows: min-content 1fr;
@@ -183,7 +180,7 @@
 }
 
 .card {
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace, sans-serif;
   font-size: var(--main-font-size);
   display: flex;
   flex-direction: column;
@@ -203,14 +200,14 @@
 }
 
 .link {
-  --text-shadow: 2px 1px 0 var(--text-shadow-color);
+  --text-shadow: 2px 2px 0 var(--text-shadow-color);
   text-shadow: var(--text-shadow);
   text-decoration: none;
   cursor: pointer;
 }
 
 .link:hover {
-  border-bottom: 2px solid var(--paragraph-color);
+  border-bottom: 1px solid var(--paragraph-color);
 }
 
 .link:focus {
@@ -238,6 +235,8 @@
 
 .gallery {
   padding-block-end: var(--padding-gallery-end);
+  padding-inline: var(--padding-inline);
+  background-color: var(--background-color);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
@@ -265,7 +264,6 @@
 .footer {
   position: relative;
   block-size: 100vh;
-  inline-size: 100vi;
   min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr;
@@ -281,15 +279,13 @@
 }
 
 @media (width >= 768px) {
-
   .header {
     min-block-size: 1024px;
-    grid-template-rows: 173px 1fr 440px;
   }
 
   .header__decor {
-    padding-inline-end: 51px;
-    padding-block-start: 21px;
+    padding-inline-end: 50px;
+    padding-block-start: 20px;
   }
 
   .header__decor::after {
@@ -299,9 +295,7 @@
 
   .header__theme-menu {
     grid-column: 4;
-    grid-row: 2;
-    justify-self: end;
-    align-content: start;
+    grid-row: 1/2;
   }
 
   .header__title {
@@ -415,17 +409,15 @@
 }
 
 @media (width >= 1024px) {
-
   .header {
     min-block-size: 768px;
-    grid-template-rows: min-content 1fr 300px;
   }
 
   .header__theme-menu {
     grid-column: 2/4;
     grid-row: 1;
     justify-self: center;
-    align-content: start;
+    align-self: start;
   }
 
   .header__theme-menu-list {
@@ -441,21 +433,6 @@
 
   .section__questions .card-list {
     grid-template-columns: repeat(3, minmax(315px, 1fr));
-    gap: 0 20px;
-  }
-
-  .card-list__item-multy {
-    grid-column: 1;
-    grid-row: 2/3;
-  }
-
-  .card-list__item-food {
-    grid-column: 2;
-    grid-row: 2/3;
-  }
-
-  .card-list__item-gadgets {
-    grid-column: 3;
-    grid-row: 2/3;
+    gap: 20px;
   }
 }

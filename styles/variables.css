@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'IBM Plex mono';
+  --font-family: "IBM Plex mono";
   --font-bold: 700;
   --font-normal: 400;
   --main-font-size: 18px;
@@ -7,10 +7,10 @@
   --padding-block-end: 50px;
   --padding-gallery-end: 40px;
   --padding-header: 10px;
-  --padding-content: 10px;
+  --padding-inline: 10px;
   --gallery-gap: 10px;
 
-  --cover-image: url(/images/cover-image-dark.png);
+  --cover-image: url(../images/cover-image-dark.png);
   --main-title-color: #db00ff;
   --text-shadow-color: #ff0070;
   --text-shadow: 4px 4px 0 var(--text-shadow-color);
@@ -24,14 +24,12 @@
 }
 
 @media (width >= 768px) {
-
   :root {
     --padding-header: 20px;
     --padding-block-start: 60px;
     --padding-block-end: 80px;
     --padding-gallery-end: 60px;
-    --padding-content: 20px;
+    --padding-inline: 20px;
     --gallery-gap: 20px;
   }
 }
-

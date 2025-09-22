@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="icon" href="/images/favicon.ico" sizes="any" />
-    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/images/mobile-icon.png" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
   </head>
@@ -57,7 +57,7 @@
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
     </header>
-    <main class="content">
+    <main>
       <section class="section section__reasons">
         <h2 class="section-title">Почему сосредоточиться так сложно</h2>
         <ul class="card-list">
@@ -104,7 +104,7 @@
       <section class="section section__questions">
         <h2 class="section-title">Что снижает концентрацию внимания?</h2>
         <ul class="card-list">
-          <li class="card-list__item card-list__item-multy">
+          <li class="card-list__item">
             <article class="card">
               <h3 class="card__title title-decor">Многозадачность</h3>
               <p class="card__text">
@@ -117,7 +117,7 @@
               </p>
             </article>
           </li>
-          <li class="card-list__item card-list__item-food">
+          <li class="card-list__item">
             <article class="card">
               <h3 class="card__title title-decor">Еда</h3>
               <p class="card__text">
@@ -130,7 +130,7 @@
               </p>
             </article>
           </li>
-          <li class="card-list__item card-list__item-gadgets">
+          <li class="card-list__item">
             <article class="card">
               <h3 class="card__title title-decor">Гаджеты</h3>
               <p class="card__text">
@@ -153,15 +153,15 @@
           секунд)
         </h2>
         <div class="recomendations__text">
-          <span class="section__subtitle title-decor"
-            >5 простых (на самом деле не очень) советов</span
-          >
+          <h3 class="section__subtitle title-decor">
+            5 простых (на самом деле не очень) советов
+          </h3>
           <ul class="card-list">
             <li class="card-list__item">
               <article class="card">
-                <h3 class="card__title card__title-recomendations title-decor">
+                <h4 class="card__title card__title-recomendations title-decor">
                   Представьте небо и облака
-                </h3>
+                </h4>
                 <p class="card__text">
                   Или листья в ручье. Тут дело в лёгкой медитации, которая
                   помогает успокоиться. Ведь часто именно тревожные мысли о
@@ -177,9 +177,9 @@
             </li>
             <li class="card-list__item">
               <article class="card">
-                <h3 class="card__title card__title-recomendations title-decor">
+                <h4 class="card__title card__title-recomendations title-decor">
                   Включите музыку
-                </h3>
+                </h4>
                 <p class="card__text">
                   Но не любую, и не любимую. Любимая может быть связана с
                   сильными положительными эмоциями, которые тоже очень сильно
@@ -191,9 +191,9 @@
             </li>
             <li class="card-list__item">
               <article class="card">
-                <h3 class="card__title card__title-recomendations title-decor">
+                <h4 class="card__title card__title-recomendations title-decor">
                   Прогуляйтесь
-                </h3>
+                </h4>
                 <p class="card__text">
                   Или даже пробегитесь. Лучше найти парк или лес: один
                   эксперимент
@@ -214,9 +214,9 @@
             </li>
             <li class="card-list__item">
               <article class="card">
-                <h3 class="card__title card__title-recomendations title-decor">
+                <h4 class="card__title card__title-recomendations title-decor">
                   Хорошо ешьте
-                </h3>
+                </h4>
                 <p class="card__text">
                   Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                   которые препятствуют резким скачкам сахара в крови. Например,
@@ -228,9 +228,9 @@
             </li>
             <li class="card-list__item">
               <article class="card">
-                <h3 class="card__title card__title-recomendations title-decor">
+                <h4 class="card__title card__title-recomendations title-decor">
                   Читайте
-                </h3>
+                </h4>
                 <p class="card__text">
                   Настоящие бумажные книги. Это правда помогает с концентрацией:
                   чтобы прочитать пост в соцсети, достаточно нескольких минут
@@ -247,31 +247,31 @@
         <div class="gallery__images">
           <img
             class="gallery__item gallery__item-sky"
-            src="/images/sunset.png"
+            src="./images/sunset.png"
             alt="мультяшная иллюстрация неба и облаков на фоне гор и заката солнца"
             loading="lazy"
           />
           <img
             class="gallery__item gallery__item-food"
-            src="/images/ice-cream.png"
+            src="./images/ice-cream.png"
             alt="мультяшная иллюстрация миски с мороженным, где у каждого шарика есть эмоции"
             loading="lazy"
           />
           <img
             class="gallery__item gallery__item-music"
-            src="/images/tape.png"
+            src="./images/tape.png"
             alt="мультяшная иллюстрация ретро кассеты окруженной иконками загрузки, курсора и окон мультиплееров"
             loading="lazy"
           />
           <img
             class="gallery__item gallery__item-books"
-            src="/images/books.png"
+            src="./images/books.png"
             alt="мультяшная иллюстрация стопки книг с чашкой кофе на ерху стопки"
             loading="lazy"
           />
           <img
             class="gallery__item gallery__item-street"
-            src="/images/street.png"
+            src="./images/street.png"
             alt="мультяшная иллюстрация пустой улицы с азиатским колоритом"
             loading="lazy"
           />

@@ -8,7 +8,7 @@
 }
 
 :root.theme-light {
-  --cover-image: url(/images/cover-image-light.png);
+  --cover-image: url(../images/cover-image-light.png);
   --main-title-color: #ffc2e6;
   --text-shadow-color: #ff8dcb;
   --text-shadow: 4px 4px 0 var(--text-shadow-color);
@@ -22,9 +22,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-
   :root {
-    --cover-image: url(/images/cover-image-light.png);
+    --cover-image: url(../images/cover-image-light.png);
     --main-title-color: #ffc2e6;
     --text-shadow-color: #ff8dcb;
     --text-shadow: 4px 4px 0 var(--text-shadow-color);
@@ -43,7 +42,6 @@
 }
 
 @media (prefers-color-scheme: light) and (width >= 1024px) {
-  
   .footer__title {
     --text-shadow-color: #ff0070;
     text-shadow: 2px 2px 0 var(--text-shadow-color);
