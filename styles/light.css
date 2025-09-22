@@ -1,12 +1,51 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.theme-light .header__decor {
+  display: none;
+}
+
+.theme-light .footer__title {
+  --text-shadow-color: #ff0070;
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
+}
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --cover-image: url(/images/cover-image-light.png);
+  --main-title-color: #ffc2e6;
+  --text-shadow-color: #ff8dcb;
+  --text-shadow: 4px 4px 0 var(--text-shadow-color);
+  --decorated-zone-color: #353430;
+  --accent-background-color: #ff8dcb;
+  --background-color: #fff1f7;
+  --section-title-color: #353430;
+  --title-color: #353430;
+  --paragraph-color: #353430;
+  --hover-theme-menu-color: rgb(50 49 45 / 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --cover-image: url(/images/cover-image-light.png);
+    --main-title-color: #ffc2e6;
+    --text-shadow-color: #ff8dcb;
+    --text-shadow: 4px 4px 0 var(--text-shadow-color);
+    --decorated-zone-color: #353430;
+    --accent-background-color: #ff8dcb;
+    --background-color: #fff1f7;
+    --section-title-color: #353430;
+    --title-color: #353430;
+    --paragraph-color: #353430;
+    --hover-theme-menu-color: rgb(50 49 45 / 0.4);
+  }
+
+  .header__decor {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) and (width >= 1024px) {
+  
+  .footer__title {
+    --text-shadow-color: #ff0070;
+    text-shadow: 2px 2px 0 var(--text-shadow-color);
+  }
 }
