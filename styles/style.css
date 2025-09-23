@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--font-family), monospace, sans-serif;
+  font-family: var(--font-family), monospace;
   background-image: var(--cover-image);
   background-color: var(--background-color);
   background-attachment: fixed;
@@ -148,7 +148,7 @@
 }
 
 .section {
-  font-family: var(--font-family), monospace, sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--main-font-size);
   padding-block-end: var(--padding-block-end);
   display: grid;
@@ -182,7 +182,7 @@
 }
 
 .card {
-  font-family: var(--font-family), monospace, sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--main-font-size);
   display: flex;
   flex-direction: column;
