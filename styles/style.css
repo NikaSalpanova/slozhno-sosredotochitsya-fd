@@ -143,12 +143,14 @@
   background-color: var(--accent-background-color);
 }
 
+.content {
+  padding-inline: var(--padding-inline);
+}
+
 .section {
   font-family: var(--font-family), monospace, sans-serif;
   font-size: var(--main-font-size);
-  background-color: var(--background-color);
   padding-block-end: var(--padding-block-end);
-  padding-inline: var(--padding-inline);
   display: grid;
   grid-template-columns: 236px 1fr 1fr;
   grid-template-rows: min-content 1fr;
@@ -235,8 +237,6 @@
 
 .gallery {
   padding-block-end: var(--padding-gallery-end);
-  padding-inline: var(--padding-inline);
-  background-color: var(--background-color);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
@@ -270,7 +270,6 @@
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
-  background-color: var(--background-color);
 }
 
 .footer__title {
